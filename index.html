@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyday Git</title>
+  </head>
+  <body>
+    <h1>Everyday Git</h1>
+    <div class="what-is-git">
+      <h2>What is Git</h2>
+      <p>
+        Git is a widely-used version control system (VCS) that helps developers
+        manage and track changes to their code. A VCS allows multiple people to
+        collaborate on a project without conflicts and keeps a history of all
+        changes, making it easy to revert to previous versions if needed. While
+        there are other VCS options like Subversion (SVN) and Mercurial, this
+        blog will focus on Git and its popular companion, GitHub, to explore how
+        they enhance software development and collaboration.
+      </p>
+    </div>
+
+    <div class="install-git">
+      <h2>Installing Git</h2>
+      <p>
+        To check if Git is installed on your machine, run the following command:
+      </p>
+      <code>git --version</code>
+      <p>If not installed:</p>
+      <ul>
+        <li>
+          Windows: Download from
+          <a href="https://gitforwindows.org/" target="_blank"
+            >Git for Windows</a
+          >.
+        </li>
+        <li>macOS: Install via Homebrew with brew install git.</li>
+        <li>
+          Linux: Install via package manager (e.g., sudo apt-get install git).
+        </li>
+      </ul>
+
+      <figure>
+        <img src="./images/img1.png" alt="" width="900px" height="200px"/>
+        <figcaption>Screenshot to check if git installed</figcaption>
+      </figure>
+    </div>
+
+    <div class="config-git">
+      <h2>Configuring git</h2>
+      <p>
+        To configure your username and email,you need to run the commands below
+      </p>
+      <p>
+        Configure your username with:
+        <code>git config --global user.name "Your Name"</code>
+      </p>
+      <p>
+        Configure your email with:
+        <code>git config --global user.email "your.email@example.com"</code>
+      </p>
+
+      <figure>
+        <img src="./images/img2.png" alt="" width="900px" height="200px"/>
+        <figcaption>Screenshot to configure git</figcaption>
+      </figure>
+    </div>
+
+    <div class="initialize-git-repo">
+      <h2>Initializing a git repository</h2>
+      <p>
+        A Git repository is a storage location for your project’s files and
+        their version history.
+      </p>
+      <p>To initialize a repository, use <code>git init</code></p>
+
+      <figure>
+        <img src="./images/img3.png" alt="" width="900px"/>
+        <figcaption>Screenshot to initialize a git repository</figcaption>
+      </figure>
+    </div>
+
+    <div class="adding-files">
+      <h2>Adding files to staging area</h2>
+      <p>
+        The staging area is where changes are prepared before committing.
+        Tracked files are being monitored by Git, while untracked files are not
+        yet added to the repository.
+      </p>
+      <p>Add files with: <code>git add filename</code></p>
+
+      <figure>
+        <img src="./images/img4.png" alt="" width="900px"/>
+        <figcaption>Screenshot about adding files</figcaption>
+      </figure>
+    </div>
+
+    <div class="commiting-changes">
+      <h2>Commiting changes</h2>
+      <p>
+        Commit changes with <code>git commit -m "Your commit message"</code>.
+      </p>
+      <p>
+        Write clear and concise commit messages that describe the changes made.
+      </p>
+      <p>
+        View past commits using <code>git log</code> and revert to a specific
+        commit if needed.
+      </p>
+
+      <figure>
+        <img src="./images/img5.png" alt="" width="900px" height="300px"/>
+        <figcaption>Screenshot about how to commit changes</figcaption>
+      </figure>
+    </div>
+
+    <div class="branches">
+      <h2>Branches</h2>
+      <p>
+        Branches are independent lines of development. They allow you to work on
+        different features simultaneously.
+      </p>
+    </div>
+
+    <div class="creating-branches">
+      <h2>Creating a branch</h2>
+      <p>Create a new branch with <code>git branch branch_name</code>.</p>
+
+      <figure>
+        <img src="./images/img6.png" alt="" width="900px"/>
+        <figcaption>Screenshot on how to create a branch</figcaption>
+      </figure>
+    </div>
+
+    <div class="viewing-all-branch">
+      <h2>Viewing All Branches</h2>
+      <p>View all branches with <code>git branch -a</code>.</p>
+      <p>The active branch is marked with an asterisk (*).</p>
+
+      <figure>
+        <img src="./images/img7.png" alt="" width="900px"/>
+        <figcaption>Screenshot on how to view all branches</figcaption>
+      </figure>
+    </div>
+
+    <div class="switching-branches">
+      <h2>Switching active branches</h2>
+      <p>
+        Switch branches with <code>git checkout branch_name</code> or
+        <code>git switch branch_name</code>.
+      </p>
+
+      <figure>
+        <img src="./images/img8.png" alt="" width="900px"/>
+        <figcaption>Screenshot on switching active branches</figcaption>
+      </figure>
+    </div>
+
+    <div class="merging-branch">
+      <h2>Merging a branch</h2>
+      <p>
+        Merge changes from one branch to another using
+        <code>git merge branch_name</code>.
+      </p>
+
+      <figure>
+        <img src="./images/img9.png" alt="" width="900px"/>
+        <figcaption>Screenshot on how to merge branches</figcaption>
+      </figure>
+    </div>
+
+    <div class="deleting-branch">
+      <h2>Deleting a branch</h2>
+      <p>Delete a branch with <code>git branch -d branch_name</code>.</p>
+      if the branch you want to delete contains some info: delete using
+      <code>git branch -D branch_name</code>
+
+      <figure>
+        <img src="./images/img10.png" alt="" width="900px"/>
+
+        <figcaption>Screenshot on how to delete a branch</figcaption>
+      </figure>
+    </div>
+
+    <div class="next-step">
+      <p>
+        Recommend learning about GitHub for remote repositories or exploring
+        advanced Git features like rebasing and stashing.
+      </p>
+    </div>
+  </body>
+</html>
